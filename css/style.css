@@ -1,0 +1,476 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 와이즐리 */
+html,body { height: 100%; }
+body {
+  min-width: 1320px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666666;
+ }
+/*
+실습-google 웹폰트 noto sans kr을 적용하시오
+*/
+ul,ol { list-style: none; }
+a { color: #000; }
+h1,h2,h3,h4,h5,h6 { line-height: 1; }
+
+/* header area */
+#header-wrap {
+  /* 1320px고정형으로 들어가서 화면이 더커지면 중앙으로 정렬 */
+  width: 1320px;
+  margin: 0 auto;
+  background: #f1f1f1;
+
+}
+
+/* 상단 고정형 메뉴 */
+#header {
+  position: fixed;
+  width: 1320px;
+  margin: 0 auto;
+  /* background: gray; */
+  /* 위 45, 좌우 20, 바닥은0 */
+  padding: 20px 0 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 300;
+}
+
+#logo {
+  float: left;
+}
+
+/* 시작하기~장바구니까지 사이트 오른쪽으로 정렬하기 */
+#header .inner { float: right; margin: 15px;}
+
+/* 오른쪽으로 정렬했으니 안에 li 하나하나 요소들을 한줄로 정렬 다시하기 */
+#header .inner #gnb, #header .inner #login-menu { float: left; }
+
+/* #gnb #login-menu의 공통코드를 확인하고 코드를 재작성하시오 */
+#header .inner > ul {
+  overflow: hidden;
+}
+
+#header .inner > ul > li {
+  float: left;
+  /* height: 20px; */
+}
+
+#header .inner > ul > li > a {
+  line-height: 20px;
+}
+
+
+#gnb {
+  margin-right: 93px;
+}
+
+#gnb li {
+  margin-left: 50px;
+  font-size: 17px;
+}
+
+#gnb li:nth-child(1) {
+  margin-left: 0;
+}
+
+#login-menu li {
+  margin-left: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#login-menu li a {
+  /* color: #fff; */
+}
+
+#login-menu li:nth-child(1) {
+  margin-left: 0;
+}
+
+#login-menu li:nth-child(4) img {
+  width: 24px;
+  height: 24px;
+}
+
+/* 장바구니 카운터 */
+/* 장바구니 옆에 카운터 동그라미 옐로우 도형만들기 */
+#login-menu li a.cart span.count {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 14px;
+  /* 동그라미 안에 숫자 색 */
+  color: #ffffff;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: #000;
+}
+
+/* 메인 배너 영역 */
+#mainbanner {
+  height: 780px;
+  /* 모니터가 1800px이면 면도 메인사진이 4000px인데 모니터 안에가운데 정렬하려면 백그라운드포지션주기. */
+  background-image: url('../img/beplain/mainimg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 10%;
+  /* background-size: auto 100%; */
+  /* background-size: auto 100%; */
+  /* 포토샵 메인베너와 동일한 색으로 설정한다 */
+  background-color: #f4f4f4;
+}
+
+#mainbanner .inner {
+  /* 나중에 안에있는 요소를 엡솔루트로 잡기위해 렐러로 잡음 */
+  position: relative;
+  width: 1320px;
+  /* height: 780px; */
+  height: 100vh;
+  margin: 0 auto;
+  /* background: red; */
+}
+
+/* 메인 배너 텍스트 */
+#mainbanner .maintext {
+  /* 메인배너 글씨 전체를 상단에서 268px정도 내려오게 만들기 */
+  /* padding-top: 50px; */
+  text-align: left;
+  /* background: yellow; */
+}
+
+/* 메인배너 메인타이틀 */
+#mainbanner .maintext p {
+  font-size: 40px;
+  color: #000;
+}
+
+#mainbanner .maintext p.maintitle {
+  line-height: 60px;
+}
+
+/* 독일산 5중날~ */
+#mainbanner .maintext p.subtitle {
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 35px;
+
+}
+
+/* 파란색박스 위에 40px만큼 40px공간주기 */
+#mainbanner .maintext p.subtitle + .common-btn {
+  margin-top: 40px;
+}
+
+/* 더 알아보기 파랑색 박스 만들기 너비,높이,레디우스는 포토샵(properties)에서 확인함 */
+.common-btn {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease-out;
+}
+
+#container section .inner .box .text-box a:hover{
+  color: #fff;
+  background: #000;
+}
+
+
+/* 컨텐츠 영역 */
+#container section .inner {
+  width: 1320px;
+  min-height: 650px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  /* background: pink; */
+}
+
+/* 짝수번째 section의 배경색상을 #f9f9f9로 style 작성하시오 */
+/* 컨테이너의 형제요소가 섹션밖에 없으니 child로 짝수지정해도됨 */
+#container section:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#container section:nth-of-type(1) .inner {
+  padding-top: 110px;
+  min-height: 485px;
+}
+
+/* section 공통요소 style  */
+/* 다양한기초자산 타이틀 글씨  */
+#container section .inner h2 {
+  font-family: 'GmarketSansMedium';
+  font-weight: 500;
+  font-size: 42px;
+  /* 라인하이트 1은 폰트사이즈와 동일하게 하겠다 */
+  line-height: 1;
+  color: #333333;
+}
+
+/* 다양한기초자산 밑에 서브타이틀글씨  */
+#container section .inner .subtitle {
+   margin-top: 30px;
+   font-size: 19px;
+   line-height: 35px;
+   /* color: #666666; */
+}
+
+/* 1번 섹션 h3 p */
+#container .inner .items h2 {
+  margin-bottom: 20px;
+}
+
+#container .inner .items p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* //section 공통요소 style  */
+#container section .inner .box-wrap {
+  overflow: hidden;
+}
+
+#container section .inner .box-wrap li {
+  float: left;
+  width: calc(25% - 40px);
+  /* 위아래0 좌우로20 */
+  padding: 0 20px;
+  text-align: center;
+  /* background: yellow; */
+}
+
+#container section .inner .box-wrap li .items {
+  /* border: 1px solid #e3e3e3; */
+  padding: 47px 0 45px;
+}
+
+#container section .inner .box-wrap li .items h3 {
+  font-size: 20px;
+  /* color: #252525; */
+}
+
+#container section .inner .box-wrap li .items p {
+  margin-top: 20px;
+  line-height: 26px;
+}
+
+#container section .inner .box-wrap li .items .img img {
+  width: 40%;
+  margin-bottom: 32px;
+  opacity: .65;
+  filter: grayscale(100%);
+}
+
+#container section:nth-child(1) .inner .box-wrap .itmes h3 {
+  color: #666;
+}
+
+/* section 2번쨰 */
+#container section .inner .box {
+  float: left;
+  width: 50%;
+  min-height: 650px;
+  text-align: center;
+}
+
+/* #container section:nth-child(2) .inner {
+  padding-top: 50px;
+} */
+
+#container section:nth-child(2) .inner .box.img {
+  background: url('../img/beplain/section01.jpg');
+  /* width: 500px; */
+}
+
+#container section:nth-child(2) .inner .box.img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/* section 3번째 */
+#container section:nth-child(3) .inner .box.img {
+  background-image: url('../img/beplain/section02.jpg');
+}
+
+#container section:nth-child(3) .inner .box.img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#container section:nth-child(3) .inner .box .text-box {
+  text-align: right;
+}
+
+
+/* section 4번째 */
+#container section:nth-child(4) .inner h2{
+  /* color: white; */
+}
+
+#container section:nth-child(4) .inner .box.img {
+  background-image: url('../img/beplain/section03.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#container section .inner .box .text-box {
+  display: inline-block;
+  text-align: left;
+  margin-top: 169px;
+  /* padding-left: 100px; */
+}
+
+#container section .inner .box .text-box h2{ line-height: 60px; }
+
+/* 파랑버튼박스 안 글씨 중앙정렬 */
+#container section .inner .box .text-box a {
+  text-align: center;
+  margin-top: 35px;
+  color: #1e1e1e;
+ }
+
+/* 하단 영역 footer */
+#footer {
+  background-color: #f9f9f9;
+}
+
+#footer .inner {
+  position: relative;
+  width: 1320px;
+  height: 330px;
+  padding: 60px 15px;
+  box-sizing: border-box;
+  /* 0 auto 가운데정렬 */
+  margin: 0 auto;
+  /* border-top: 1px solid #dedede; */
+}
+
+#footer .inner .f-box {
+  float: left;
+}
+
+#footer .inner .tel h3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#footer .inner .f-box:nth-child(2) {
+  /* margin-left를 줘도 똑같음 */
+  padding-left: 75px;
+}
+
+/* site menu */
+#footer .inner .f-box ul { overflow: hidden;
+}
+
+#footer .inner .f-box ul li {
+  float: left;
+  /* height: 20px; */
+  margin-right: 40px;
+}
+
+#footer .inner .f-box ul li:last-child {
+  margin-right: 0;
+}
+
+#footer .inner .f-box ul li a{
+  line-height: 20px;
+  color: #666;
+}
+
+#footer .inner .tel .telN {
+  font-size: 20px;
+  color: #666;
+}
+
+#footer .inner .f-box .tel {
+  /* left랑 right를 일자로 정렬하려면 부모요소에 display:flex를주고, 오른쪽으로 올리려는 자식요소에 display:line-block */
+  display: flex;
+  margin-top: 17px;
+  line-height: 28px;
+  color: #666666;
+  /* font-weight: bold; */
+}
+
+#footer .inner .f-box .tel p {
+  font-size: 14px;
+  /* padding-top: px; */
+}
+
+/* 반품주소 */
+#footer .inner .tel h4 {
+  font-size: 19px;
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+#footer .inner .tel .right {
+  display: inline-block;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+#footer .inner .f-box .copyright {
+  margin-top: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+
+#footer .inner .tel .right p:nth-child(5) {
+  /* 인라인블럭해주면 배송조회 글자 밑 바텀 선 길이가 글자에맞게 조정됨 */
+  border-bottom : 1px solid #999;
+  display: inline-block;
+}
+
+#familysite {
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 41px;
+  /* right: 100px; */
+  border: 1px solid #d1d1d1;
+  color: #333333;
+  outline: none;
+  /* 박스 하단화살표 없애기 */
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  /* 오른쪽 맨 끝으로 보내는것 right, 또는 100%
+  100%으로 맨끝으로 보내면 안되고, 패딩라이트 15px만틈 앞으로 당겨줘야하니까 100%-15px로 해준다
+  y축은 center */
+  background-position: calc( 100% - 15px ) center;
+}
+
+/* ie 브라우저 select box arrow button 이미지 삭제 */
+select::-ms-expand {
+  display: none;
+}
+
+#familysite:focus {
+  border: 1px solid #999999;
+  background-image: url('../img/select_box_arrow_.png');
+}

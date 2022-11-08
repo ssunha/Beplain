@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>비플레인 시안코딩</title>
+    <meta name="veiwport" content="width=device-width, user-scalable=no">
+    <!-- 실습 -meta veiwport 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="header-wrap">
+      <header id="header">
+        <div id="logo">
+          <h1>
+            <a href="index.html"><img src="./img/beplain/beplain_logo.svg" alt="beplain" width="120px"></a>
+          </h1>
+        </div>
+        <div class="inner">
+            <!-- ul#gnb>li*4>a[href=#] -->
+            <ul id="gnb">
+              <!-- #은 id를 지칭하는것 -->
+              <li><a href="#first">브랜드스토리</a></li>
+              <li><a href="#second">쇼핑</a></li>
+              <li><a href="#third">이벤트</a></li>
+              <li><a href="#fourth">매거진</a></li>
+            </ul>
+             <!-- ul#login-menu>li*4>a[href=#] -->
+             <ul id="login-menu">
+               <!-- <li><a href="#">로그인</a></li>
+               <li><a href="#">회원가입</a></li> -->
+               <li><a href="#">Login</a></li>
+               <li><a href="#">Join</a></li>
+               <li><a href="#" class="cart">Cart<span class="count">0</span></a></li>
+               <li><a href="#"><img src="./img/beplain/icon-search-l.png" alt=""></a></li>
+
+             </ul>
+          </div>
+      </header>
+    </div>
+    <!-- 사이트 메인베너부분 -->
+    <div id="mainbanner" class="swiper swiper-container">
+      <div class="swiper-wrapper">
+        <div class="inner swiper-slide first">
+          <div class="maintext">
+            <p class="maintitle">
+              녹두로 순하게 세정은 강하게<br>
+              <strong>클렌징 선두, 녹두!</strong>
+            </p>
+            <!-- p.subtilte -->
+            <p class="subtitle">#말끔세안 #피지쓱싹 #모공청소<br>#민감피부#안심세안 녹두 약산성 클렌징폼</p>
+            <!-- a.common-btn -->
+            <!-- <a href="#" class="common-btn">더 알아보기</a> -->
+          </div>
+        </div>
+        <div class="inner swiper-slide second">
+          <div class="maintext">
+            <p class="maintitle">
+              백탁없이 부드럽고 촉촉하게!<br>
+              <strong>클린 오션 모이스처 선스크림</strong>
+            </p>
+            <!-- p.subtilte -->
+            <p class="subtitle">#촉촉수분자차 #SPF50+PA++++<br>선크림은 기초케어의 가장 마지막 필수단계!</p>
+            <!-- a.common-btn -->
+            <!-- <a href="#" class="common-btn">더 알아보기</a> -->
+          </div>
+        </div>
+        <div class="inner swiper-slide third">
+          <div class="maintext">
+            <p class="maintitle">
+              피부 컨디션에 맞게 골라쓰자<br>
+              <strong>대용량 앰플,스킨 균일가 SALE</strong>
+            </p>
+            <!-- p.subtilte -->
+            <p class="subtitle">#피부진정 #수분공급 #묵은각질케어<br>2020 화해 뷰티 어워드 베스트 신제품 1위</p>
+            <!-- <a href="#" class="common-btn">더 알아보기</a> -->
+          </div>
+        </div>
+        <div class="inner swiper-slide fourth">
+          <div class="maintext">
+            <p class="maintitle">
+              각질과 고모습 케어를 동시에!<br>
+              <strong>캐모마일 인텐스 보습 립밤</strong>
+            </p>
+            <!-- p.subtilte -->
+            <p class="subtitle">#멀티케어 #겉탄탄속촉촉 #듀얼립밤<br>보습은 채우고 각질은 재우는 #오일품은밤</p>
+            <!-- a.common-btn -->
+            <!-- <a href="#" class="common-btn">더 알아보기</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div id="container">
+      <!-- 첫번째 섹션 -->
+      <section id="first">
+        <div class="inner">
+          <div class="items">
+            <h2>Pick Your beplain</h3>
+              <p>비플레인이 제안하는 피부 고민별 제품</p>
+            </div>
+          <ul class="box-wrap">
+            <li>
+              <div class="items">
+                <div class="img">
+                  <img src="./img/beplain/type_icon_01.png" alt="진정">
+                </div>
+                <h3>Calming</h3>
+                <p>진정</p>
+              </div>
+            </li>
+            <li>
+              <div class="items">
+                <div class="img">
+                  <img src="./img/beplain/type_icon_02.png" alt="수분보습">
+                </div>
+                <h3>Moisturizing</h3>
+                <p>수분&#183;보습</p>
+              </div>
+            </li>
+            <li>
+              <div class="items">
+                <div class="img">
+                  <img src="./img/beplain/type_icon_03.png" alt="피지">
+                </div>
+                <h3>Purifying</h3>
+                <p>피지&#183;각질&#183;모공</p>
+              </div>
+            </li>
+            <li>
+              <div class="items">
+                <div class="img">
+                  <img src="./img/beplain/type_icon_04.png" alt="자외선차단">
+                </div>
+                <h3>Sun care</h3>
+                <p>자외선 차단</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 두번쨰 섹션 -->
+      <section id="second">
+        <div class="inner">
+          <div class="box img"></div>
+          <div class="box">
+            <div class="text-box">
+              <h2>GREENFUL</h2>
+              <div class="subtitle">피지 쓱싹, 녹두 클렌징 오일<br>말끔 세안, 녹두 약산성 클렌징폼<br>모공 청소, 녹두 모공 클레이 팩</div>
+              <a href="#" class="common-btn">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 세번째 섹션 -->
+      <section id="third">
+        <div class="inner">
+          <div class="box">
+            <div class="text-box">
+              <h2>CICATEROL</h2>
+              <div class="subtitle">시카풀 라인에서 더 업그레이드!<br>#진정급행라인 #진정케어완성<br>시카말고 #시카테롤</div>
+              <a href="#" class="common-btn">VIEW MORE</a>
+            </div>
+          </div>
+          <div class="box img"></div>
+        </div>
+      </section>
+      <!-- 네번째 섹션 -->
+      <section id="fourth">
+        <div class="inner">
+          <div class="box img"></div>
+          <div class="box">
+            <div class="text-box">
+              <h2>CLEAN OCEAN</h2>
+              <div class="subtitle">PICK YOUR SUNSCREEN!<br>비플피플이 선택한 선크림은?<br>취향에 맞게 선택하세요<br>촉촉 선크림 VS 보송 선크림</div>
+              <a href="#" class="common-btn">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="inner">
+        <div class="f-box logo">
+          <a href="#"><img src="./img/beplain/footerlogo.png" alt="로고"></a>
+        </div>
+        <div class="f-box left">
+          <!-- ul>li*2>a[href=#] -->
+          <ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관 및 고객유의사항</a></li>
+          </ul>
+          <!-- &nbsp; 띄어쓰기/또는 스페이스바로 띄우기 -->
+          <div class="tel">
+            <div class="left">
+              <h3>Customer center</h3>
+              <a href="tel" class="telN">1544-3228</a>
+              <p>OPEN TIME (10:00 ~ 17:00)</p>
+              <p>LUNCH TIME (12:30 ~ 14:00)</p>
+              <p>OFF (SATURDAY, SUNDAY, HOLIDAY)</p>
+            </div>
+            <div class="right">
+              <h3>Returns &amp; Exchange</h3>
+              <h4>반품 주소</h4>
+              <p>경기도 파주시 검산로 301-22</p>
+              <p>모먼츠컴퍼니 물류센터</p>
+              <p>배송조회</p>
+            </div>
+            <div class="info">
+              <h3>주식회사 모먼츠컴퍼니</h3>
+              <p>대표 : 정윤진</p>
+              <p>서울특별시 강남구 도산대로 145</p>
+              <p>사업자등록번호 : 842-86-01047</p>
+              <p>통신판매업신고 : 제2020-서울강남-01251호</p>
+            </div>
+          </div>
+          <div class="copyright">2020 beplain. Hosting by NHN GODO.</div>
+        </div>
+        <select name="familysite" id="familysite">
+          <!-- familysite는 선택 전에는 보여도, 설렉트박스 선택 후에는 없어져야함
+           selected disabled hidden -> 선택란에 패밀리사이트가 안나오게함   -->
+          <option value="default" selected disabled hidden>인터넷뱅킹 바로가기</option>
+          <option value="woori">우리은행</option>
+          <option value="daegu">대구은행</option>
+          <option value="shinhan">신한은행</option>
+          <option value="hana">하나은행</option>
+        </select>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css"></script> -->
+    <!-- swiper script area -->
+    <script type="text/javascript">
+      let swiper = new Swiper('.swiper-container', {
+        loop: true, //무한으로 1 2 3 1 2 3 으로 돌아감
+        autoplay: { //자동으로 움직이게함 기다렸다가 몇초뒤에 움직일거냐. 2500- 2.5초 자동플레이
+          delay: 2500 // 기준 ms 2500ms -> 2.5초
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        on: {
+          slideChangeTransitionEnd: function(){
+            console.log(this.realIndex);
+            var thisRealIndex = this.realIndex;
+
+            // 2.방식
+            if ( thisRealIndex == 0 ) {//thisActive가 1 또는 4일때
+              window.document.body.querySelector('#mainbanner').style.backgroundImage = 'url(./img/beplain/mainimg1.png)'
+              // gnb li a태그들의 스타일-color색깔을 바꿔준다.
+              // window.document.body.querySelector('#gnb li a').style.color = '#666666';
+              window.document.body.querySelector('#header').classList.remove('darkbg');
+            }else if( thisRealIndex == 1 ){
+              window.document.body.querySelector('#mainbanner').style.backgroundImage = 'url(./img/beplain/mainimg2.png)';
+              // window.document.body.querySelector('#gnb li a').style.color = '#ffffff';
+              window.document.body.querySelector('#header').classList.add('darkbg');
+            }else if ( thisRealIndex == 2 ){
+              window.document.body.querySelector('#mainbanner').style.backgroundImage = 'url(./img/beplain/mainimg3.png)'
+              // window.document.body.querySelector('#gnb li a').style.color = '#ffffff';
+              window.document.body.querySelector('#header').classList.add('darkbg');
+            }else if ( thisRealIndex == 3 ){
+              window.document.body.querySelector('#mainbanner').style.backgroundImage = 'url(./img/beplain/mainimg4.png)'
+              window.document.body.querySelector('#header').classList.add('darkbg');
+          }
+        }
+      }
+    });
+    </script>
+
+  </body>
+</html>
